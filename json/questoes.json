@@ -1,1 +1,35 @@
-[{"texto":"Quanto é 3 + 4?","resolucao":"3 + 4 = 7","resposta":"7"},{"texto":"Quanto é 23 - 11?","resolucao":"23 - 11 = 12","resposta":"12"},{"texto":"Quanto é 45 * 2?","resolucao":"45 * 2 = 90","resposta":"90"},{"texto":"Quanto é 35 / 7?","resolucao":"37 / 7 = 5","resposta":"5"}]
+{
+    "conjuntos": [
+        {
+            "texto": "Dado A = {1, 2, 3, 4} e B = {3, 4, 5, 6}, determine:\n\na) A U B\nb) A - B",
+            "resolucao": "a) A U B = {1, 2, 3, 4, 5, 6}\nb) A - B = {1, 2}",
+            "resposta": "a) {1, 2, 3, 4, 5, 6}\nb) {1, 2}"
+        }
+    ],
+    "logaritmos": [
+        {
+            "texto": "Calcule o logaritmo de 64 na base 4.",
+            "resolucao": "log_4 (64) = x\n\n4^x = 64\n\n64 / 4 = 16\n16 / 4 = 4\n4 / 4 = 1\n\n4^x = 4^3\n\nLogo x = 3",
+            "resposta": "3"
+        },
+        {
+            "texto": "Calcule log_2 (8).",
+            "resolucao": "log_2 (8) = x\n\n2^x = 8\n2^x = 2^3\n\nLogo, x = 3.",
+            "resposta": "3"
+        }
+    ],
+    "sequencias": [
+        {
+            "texto": "Determine o 51º termo da P.A. (2, 5, 8, 11, ...)",
+            "resolucao": "r = 5 - 2 = 3\na_51 = 2 + 50 * 3 = 152",
+            "resposta": "152"
+        }
+    ],
+    "areas": [
+        {
+            "texto": "Calcule a área de um triângulo de base 4m e altura 3m.",
+            "resolucao": "A = b * h / 2\nA = 4 * 3 / 2 = 12/2 = 6m²",
+            "resposta": "6m²"
+        }
+    ]
+}

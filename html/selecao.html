@@ -9,6 +9,40 @@
     <div id="tudo">
         <h1>Seleção de Questões</h1>
         <input type="file" id="btCarregar">
+        <hr>
+        <select id="selTopicos">
+            <option value="nenhum">Nenhum</option>
+            <optgroup label="1ª série">
+                <option value="conjuntos">Conjuntos</option>
+                <option value="afim">Função Afim</option>
+                <option value="quadratica">Função Quadrática</option>
+                <option value="exponencial">Função Exponencial</option>
+                <option value="areas">Área de Figuras Planas</option>
+                <option value="trigonometria">Trigonometria</option>
+            </optgroup>
+            <optgroup label="2ª série">
+                <option value="logaritmos">Logaritmos</option>
+                <option value="poliedros">Poliedros</option>
+                <option value="prisma">Prisma</option>
+                <option value="cilindro">Cilindro</option>
+                <option value="sequencias">Sequências</option>
+                <option value="financeira">Matemática Financeira</option>
+                <option value="matrizes">Matrizes</option>
+                <option value="sistemas">Determinantes e Sistemas</option>
+                <option value="piramide">Pirâmide</option>
+                <option value="cone">Cone</option>
+                <option value="esfera">Esfera</option>
+            </optgroup>
+            <optgroup label="3ª série">
+                <option value="combinatoria">Análise Combinatória</option>
+                <option value="probabilidade">Probabilidade</option>
+                <option value="estatistica">Estatística</option>
+                <option value="ga">Geometria Analítica</option>
+                <option value="complexos">Números Complexos</option>
+                <option value="polinomios">Polinômios</option>
+            </optgroup>
+        </select>
+        <div id="dvCards"></div>
     </div>
     
     <script src="../js/selecao.js"></script>
