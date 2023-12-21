@@ -2,6 +2,7 @@ const btCarregar = document.querySelector("#btCarregar");
 const selTopicos = document.querySelector("#selTopicos");
 const opcoes = document.querySelectorAll("option");
 const dvCards = document.querySelector("#dvCards");
+
 let questoes;
 let topico;
 
@@ -142,16 +143,20 @@ function exportarPDF() {
     let respostas = "";
     let numeroDaQuestao = 1;
 
-    for (let i = 0; i < questoes.length; i++) {
-        if (questoes[topico][i].selecionada) {
-            texto += `<strong>${numeroDaQuestao++})</strong> ${questoes[topico][i].texto}
-                      <br>
-                      <br>`;
-            respostas += `<strong>${numeroDaQuestao++})</strong> ${questoes[topico][i].resolucao}
-                         <br>
-                         Resposta: ${questoes[topico][i].resposta}
-                         <br>
-                         <br>`;
+    for (const topico in questoes) {
+        for (let i = 0; i < questoes[topico].length; i++) {
+            if (questoes[topico][i].selecionada) {
+                texto += `<strong>${numeroDaQuestao})</strong> ${questoes[topico][i].texto}
+                          <br>
+                          <br>`;
+                respostas += `<strong>${numeroDaQuestao})</strong> ${questoes[topico][i].resolucao}
+                             <br>
+                             Resposta: ${questoes[topico][i].resposta}
+                             <br>
+                             <br>`;
+
+                numeroDaQuestao++;
+            }            
         }
     }
 
