@@ -60,6 +60,8 @@ function cadastrarQuestao() {
     txtQestao.value = "";
     txtResolucao.value = "";
     txtResposta.value = "";
+
+    contarQuestoesCadastradas();
 }
 
 function salvarQuestoesComoJSON() {
